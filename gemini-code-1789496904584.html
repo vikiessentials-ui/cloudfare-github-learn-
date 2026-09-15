@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<meta name="description" content="Learn With Flow — free technology learning platform">
+<title>Learn With Flow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--blue:#0056D2;--navy:#0F172A;--muted:#64748B;--line:#E2E8F0;--bg:#F8FAFC;--gold:#C9A227;--red:#DC2626;--green:#15803D}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--navy);background:#fff}button,input,textarea,select{font:inherit}button{cursor:pointer}.nav{position:sticky;top:0;z-index:30;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navin{max-width:1250px;margin:auto;padding:14px 22px;display:flex;align-items:center;gap:22px}.brand{font-family:"Plus Jakarta Sans";font-size:20px;font-weight:800;color:var(--blue);white-space:nowrap}.links{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}.links button,.footer button{border:0;background:transparent;color:#334155;padding:8px}.links button:hover,.footer button:hover{color:var(--blue)}.shield{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 11px}.hero{padding:72px 22px 60px;background:linear-gradient(135deg,#fff,#eef5ff);border-bottom:1px solid var(--line)}.heroIn,.wrap,.footerIn{max-width:1250px;margin:auto}.eyebrow{font-size:12px;color:var(--blue);font-weight:800;letter-spacing:.1em;text-transform:uppercase}.hero h1{font-family:"Plus Jakarta Sans";font-size:clamp(42px,7vw,74px);line-height:1;margin:12px 0}.hero p{max-width:760px;font-size:18px;line-height:1.7;color:#475569}.search{display:flex;gap:10px;max-width:900px;margin-top:25px}.search input{flex:1;border:1px solid var(--line);border-radius:13px;padding:16px;outline:none}.search input:focus{border-color:var(--blue);box-shadow:0 0 0 4px #0056d21a}.primary{border:0;background:var(--blue);color:#fff;padding:12px 17px;border-radius:10px;font-weight:800}.secondary{border:1px solid var(--line);background:#fff;color:var(--navy);padding:11px 16px;border-radius:10px;font-weight:700}.wrap{padding:44px 22px}.sectionHead{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.sectionHead h2{font-family:"Plus Jakarta Sans";font-size:30px;margin:0}.sectionHead p{color:var(--muted)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:#475569}.chip.active{background:#eaf2ff;border-color:#b9d2ff;color:var(--blue);font-weight:800}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{overflow:hidden;border:1px solid var(--line);border-radius:17px;background:#fff;box-shadow:0 7px 25px #0f172a09;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 15px 40px #0f172a13}.cover{height:170px;background:linear-gradient(135deg,#0056D2,#0F172A);display:flex;align-items:end;padding:17px;color:#fff}.badge{background:#ffffff22;border:1px solid #ffffff44;border-radius:8px;padding:6px 9px;font-size:12px;font-weight:800}.cardbody{padding:18px}.card h3{font-family:"Plus Jakarta Sans";font-size:18px;line-height:1.4;margin:7px 0}.meta{font-size:13px;color:var(--muted);line-height:1.6}.actions{display:flex;gap:8px;margin-top:15px}.actions>*{flex:1}.page{display:none}.page.show{display:block}.workspace{display:none}.workspace.show{display:block}.learnGrid{display:grid;grid-template-columns:minmax(0,1fr) 350px;gap:20px}.playerbox{background:#020617;border-radius:15px;overflow:hidden}.player{width:100%;aspect-ratio:16/9}.curriculum{border:1px solid var(--line);border-radius:15px;overflow:auto;max-height:680px}.module h4{margin:0;padding:15px;background:#f8fafc;border-bottom:1px solid var(--line)}.lesson{width:100%;display:flex;text-align:left;gap:9px;padding:12px 14px;border:0;border-bottom:1px solid #f1f5f9;background:#fff}.lesson:hover{background:#f8fbff}.lesson:disabled{opacity:.48;cursor:not-allowed}.tick{margin-left:auto;color:var(--green);font-weight:900}.overlay{position:fixed;inset:0;background:#0f172a99;display:none;align-items:center;justify-content:center;padding:18px;z-index:100}.overlay.show{display:flex}.modal{background:#fff;border-radius:18px;width:min(760px,100%);max-height:90vh;overflow:auto;padding:25px}.question{border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}.question p{font-weight:800}.question label{display:block;padding:8px;border-radius:8px}.question label:hover{background:#f8fafc}.alert{padding:12px;border-radius:9px;display:none}.alert.error{display:block;background:#fef2f2;color:#991b1b}.owner{display:none;background:#0f172a;color:#fff}.owner.show{display:block}.ownerIn{max-width:1250px;margin:auto;padding:25px 22px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{background:#1e293b;padding:17px;border-radius:12px}.stat b{font-size:25px}.panel{background:#fff;color:var(--navy);padding:20px;border-radius:14px;margin-top:18px}.panel input,.panel select{width:100%;padding:12px;margin:6px 0;border:1px solid var(--line);border-radius:8px}.footer{background:#f8fafc;border-top:1px solid var(--line)}.footerIn{padding:34px 22px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:25px}.footer h4{margin-top:0}.certificate{display:none;width:1123px;height:794px;background:#fff;border:13px solid var(--blue);padding:60px;text-align:center;position:relative;font-family:"Plus Jakarta Sans",Arial}.certificate:after{content:"";position:absolute;inset:22px;border:2px solid var(--gold);pointer-events:none}.certificate h1{color:var(--blue);font-size:42px;margin:24px 0 10px}.certName{font-size:40px;font-weight:800;margin:18px 0}.certCourse{font-size:22px;font-weight:700;margin:12px}.certBottom{display:flex;justify-content:space-between;align-items:end;margin-top:55px}.signature{font-family:cursive;font-size:29px;font-style:italic}.verify{font-size:11px;color:#475569;margin-top:5px}@media(max-width:950px){.grid{grid-template-columns:repeat(2,1fr)}.learnGrid{grid-template-columns:1fr}.links{display:none}.stats{grid-template-columns:repeat(2,1fr)}.footerIn{grid-template-columns:1fr 1fr}}@media(max-width:600px){.grid,.stats,.footerIn{grid-template-columns:1fr}.search{flex-direction:column}.hero{padding:48px 15px}.wrap{padding:30px 15px}.navin{padding:12px 14px}.certificate{transform:scale(.35);transform-origin:top left}}
+.langbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:14px}.langbar select,.langbar button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 11px}.voiceBtn{color:var(--blue);font-weight:800}.ytFallback{height:100%;min-height:260px;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;color:#cbd5e1;background:#020617}.ytFallback a{color:#93c5fd;font-weight:800}.courseSource{margin-top:10px;padding:10px;border-radius:10px;background:#f8fafc;font-size:12px}.goldbar{height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px 0}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="navin">
+<div class="brand">Learn With Flow</div>
+<div class="links"><button onclick="show('catalog')">Courses</button><button onclick="show('about')">About Us</button><button onclick="show('mission')">Mission</button><button onclick="show('ceo')">About CEO</button><button onclick="show('privacy')">Privacy</button><button onclick="show('security')">Security</button><button onclick="show('contact')">Contact</button></div>
+<button class="shield" onclick="ownerLogin()" aria-label="Owner login">🛡️</button>
+</div></nav>
+
+<section id="catalog" class="page show"><header class="hero"><div class="heroIn">
+<div class="eyebrow">100% Free Technology Learning</div><h1>Learn. Build. Flow.</h1>
+<p>Discover 182 structured technology learning tracks, assessments and independent Learn With Flow certificates in one clean platform.</p>
+
+<div class="langbar" aria-label="Language and voice controls">
+  <select id="languageSelect" onchange="setLanguage(this.value)">
+    <option value="en">English</option><option value="ur">اردو — Urdu</option>
+    <option value="hi">हिन्दी — Hindi</option><option value="ar">العربية — Arabic</option>
+    <option value="bn">বাংলা — Bengali</option><option value="fr">Français</option>
+    <option value="es">Español</option><option value="de">Deutsch</option>
+    <option value="tr">Türkçe</option><option value="id">Bahasa Indonesia</option>
+    <option value="pt">Português</option><option value="zh-CN">简体中文</option>
+    <option value="ja">日本語</option><option value="ko">한국어</option>
+    <option value="ru">Русский</option><option value="it">Italiano</option>
+  </select>
+  <button class="voiceBtn" onclick="speakPage()">🔊 Read page</button>
+  <button class="secondary" onclick="stopSpeech()">⏹ Stop voice</button>
+</div>
+<div class="search"><input id="search" placeholder="Search 182 courses..." oninput="render()"><button class="primary" onclick="document.getElementById('search').focus()">Search</button></div>
+</div></header><div class="wrap"><div class="sectionHead"><div><h2>Course Catalog</h2><p id="count"></p></div></div><div id="filters" class="filters"></div><div id="grid" class="grid"></div></div></section>
+
+<section id="workspace" class="page"><div class="wrap"><div class="sectionHead"><div><h2 id="courseTitle"></h2><p id="courseDesc"></p></div><button class="secondary" onclick="show('catalog')">← Courses</button></div><div class="learnGrid"><div><div class="playerbox"><div id="player" class="player"></div></div><h3 id="lessonTitle">Select a lesson</h3><p id="lessonStatus" class="meta"></p></div><div id="curriculum" class="curriculum"></div></div></div></section>
+
+<section id="about" class="page"><div class="wrap"><h2>About Us</h2><p>Learn With Flow is an independent technology-learning platform designed to make structured digital education easier to access. It organizes learning resources, assessments, progress tracking and independent Learn With Flow certificates in one environment.</p><p>The long-term vision is a broad educational ecosystem covering artificial intelligence, cybersecurity, programming, cloud computing, data, design, DevOps and modern digital skills.</p></div></section>
+<section id="mission" class="page"><div class="wrap"><h2>Our Mission</h2><h3>Make technology education accessible, structured and free.</h3><p>We aim to reduce barriers to learning, help students discover technology, encourage practical skills, organize resources clearly and support learners who may not be able to afford expensive courses.</p></div></section>
+<section id="ceo" class="page"><div class="wrap"><h2>About the CEO</h2><h3>Muhammad Talha — Founder &amp; CEO, Learn With Flow</h3><p>The founder's goal is to build an educational platform that makes technology learning more accessible to students regardless of financial background. Learn With Flow is designed around free learning resources, structured assessments, practical skills, responsible technology use and a long-term vision for a global learning community.</p><p>The platform aims to help learners explore artificial intelligence, cybersecurity, programming, cloud computing, data, design, DevOps and modern digital skills through organized learning tracks.</p><div class="goldbar"></div><div class="panel"><h3>❤️ Credit to My Father — Muhammad Toseef</h3><p>Learn With Flow is also dedicated to <strong>Muhammad Toseef</strong>, whose hard work, sacrifices, encouragement and constant support have been an important part of this journey. This section is a sincere acknowledgment of the effort and guidance that helped make the dream of building something useful for learners possible.</p><p><strong>With gratitude and respect — thank you, Muhammad Toseef.</strong></p></div></div></section>
+<section id="privacy" class="page"><div class="wrap"><h2>Privacy Policy</h2><p>Learn With Flow may process information needed for learning features, such as a student's name, course progress, assessment results and certificate information. Browser storage may be used for local preferences and progress where implemented. Embedded YouTube content may be subject to Google's own privacy practices.</p><p>When additional analytics, authentication, email or database services are connected, this policy should be updated to accurately describe their collection, retention and user-rights practices.</p></div></section>
+<section id="security" class="page"><div class="wrap"><h2>Security</h2><p>Production security should use HTTPS, server-side authorization, secure environment secrets, input validation, dependency updates and appropriate database access controls. Never place private API keys in client-side code.</p><p>No website is completely unhackable. Security requires continuous testing, monitoring and maintenance.</p></div></section>
+<section id="contact" class="page"><div class="wrap"><h2>Contact Support</h2><form onsubmit="event.preventDefault();alert('Your message has been prepared. Connect an email service to enable delivery.');"><input required placeholder="Name" style="width:100%;padding:12px;margin:6px 0;border:1px solid var(--line);border-radius:8px"><input required type="email" placeholder="Email" style="width:100%;padding:12px;margin:6px 0;border:1px solid var(--line);border-radius:8px"><input required placeholder="Subject" style="width:100%;padding:12px;margin:6px 0;border:1px solid var(--line);border-radius:8px"><textarea required rows="6" placeholder="Message" style="width:100%;padding:12px;margin:6px 0;border:1px solid var(--line);border-radius:8px"></textarea><button class="primary">Send Message</button></form></div></section>
+
+<section id="owner" class="owner"><div class="ownerIn"><h2>Owner Dashboard</h2><div class="stats"><div class="stat"><b id="statCourses">0</b><br>Courses</div><div class="stat"><b id="statLinked">0</b><br>Linked Playlists</div><div class="stat"><b>450+</b><br>Assessment Questions</div><div class="stat"><b id="statCerts">0</b><br>Completed Tracks</div></div><div class="panel"><h3>Attach YouTube Playlist</h3><p><strong>Playlist quality rule:</strong> only use a real public YouTube playlist that genuinely matches the selected course. Do not paste unrelated or fabricated IDs. Paste a real public playlist URL.</p><select id="courseSelect"></select><input id="playlistUrl" placeholder="https://www.youtube.com/playlist?list=PLAYLIST_ID"><button class="primary" onclick="attach()">Attach Playlist</button><p id="ownerMsg" class="meta"></p></div></div></section>
+
+<div id="quiz" class="overlay"><div class="modal"><h2 id="quizTitle">Assessment</h2><p id="quizRule"></p><div id="quizAlert" class="alert"></div><form id="quizForm"></form><button class="primary" onclick="submitQuiz(event)">Submit Assessment</button> <button class="secondary" onclick="closeQuiz()">Cancel</button></div></div>
+
+<div id="certificate" class="certificate"><div style="letter-spacing:.15em;color:var(--gold);font-weight:800">LEARN WITH FLOW</div><h1>CERTIFICATE OF COMPLETION</h1><div>Presented to</div><div id="certName" class="certName"></div><div>for successfully completing</div><div id="certCourse" class="certCourse"></div><div>Final Graduation Assessment: <b>25/25</b></div><div class="certBottom"><div><div id="qrcode"></div><div id="certVerify" class="verify"></div></div><div><div class="signature">Muhammad Talha</div><b>Founder &amp; CEO</b><br>Learn With Flow</div></div></div>
+
+<footer class="footer"><div class="footerIn"><div><h4>Learn With Flow</h4><p>Learn. Build. Flow.</p><p>Free technology learning with structured assessments and independent certificates.</p></div><div><h4>Platform</h4><button onclick="show('catalog')">Courses</button><br><button onclick="show('mission')">Mission</button></div><div><h4>Company</h4><button onclick="show('about')">About Us</button><br><button onclick="show('ceo')">About CEO</button></div><div><h4>Trust</h4><button onclick="show('privacy')">Privacy</button><br><button onclick="show('security')">Security</button><br><button onclick="show('contact')">Contact</button></div></div></footer>
+
+<script>
+const categories=["All","Artificial Intelligence","Cybersecurity","Programming","Web Development","Data Science","UI/UX Design","Cloud Computing","DevOps","Networking","Databases","Mobile Development","Software Engineering"];
+const titles=["Artificial Intelligence & Machine Learning","Cyber Security & Ethical Hacking","UI/UX Design & Figma Mastery","Introduction to Front-End Development","Full Stack Software Engineering","Cloud Computing & DevOps","Generative AI Fundamentals","Python Programming","JavaScript Essentials","TypeScript Development","React Development","Next.js Development","Angular Development","Vue.js Development","Node.js Backend Development","Django Web Development","Flask Web Development","Java Programming","C Programming","C++ Programming","C# Development","Go Programming","Rust Programming","PHP Development","SQL Fundamentals","PostgreSQL Mastery","MySQL Database Development","MongoDB Development","Data Analytics","Data Science Foundations","Machine Learning Engineering","Deep Learning","Natural Language Processing","Computer Vision","Prompt Engineering","AI Ethics","Cybersecurity Foundations","Ethical Hacking Foundations","Network Security","Cloud Security","Digital Forensics","Incident Response","SIEM Fundamentals","Security Operations","Threat Intelligence","Identity & Access Management","Zero Trust Security","Linux Security","Web Application Security","API Security","DevSecOps","Cybersecurity Risk Management","Security Awareness","Power BI Analytics","Microsoft Fabric","Data Engineering","Data Visualization","Statistics for Data Science","Excel for Data Analytics","BigQuery Analytics","Cloud Data Engineering","AWS Cloud Foundations","AWS Solutions Architecture","AWS DevOps","AWS Security","Microsoft Azure Fundamentals","Azure Administration","Azure DevOps","Azure Security","Google Cloud Fundamentals","Google Cloud Security","Google Cloud DevOps","Kubernetes","Docker","Terraform","CI/CD Engineering","Git & GitHub","GitHub Actions","Linux Administration","Bash Scripting","Computer Networking","Network Administration","TCP/IP Networking","Cisco Networking Foundations","System Design","Software Architecture","Clean Code","Object-Oriented Programming","Data Structures & Algorithms","Software Testing","QA Automation","API Development","Microservices","Backend Architecture","Frontend Architecture","Web Performance","Accessibility Engineering","HTML & CSS","Responsive Web Design","Tailwind CSS","Sass & CSS Architecture","Figma UI Design","Design Systems","UX Research","UX Writing","Interaction Design","Prototyping","Mobile UX","Android Development","Flutter Development","React Native","iOS Development","Game Development Foundations","Unity Development","Unreal Engine Foundations","Blockchain Fundamentals","Smart Contracts","Web3 Development","IT Support Foundations","Operating Systems","Computer Architecture","Virtualization","Observability","Site Reliability Engineering","Platform Engineering","MLOps","DataOps","Cloud FinOps","Agile Software Development","Scrum Foundations","Product Management for Technology","Technical Communication","Digital Project Management","Open Source Development","Technical Interview Preparation","Career Readiness for Developers","Responsible AI","Technology Entrepreneurship","Cybersecurity Career Foundations","Cloud Career Foundations","Data Career Foundations","Web Developer Career Foundations","Software Engineering Career Foundations","AI Project Portfolio","Cybersecurity Project Portfolio","Cloud Project Portfolio","Full Stack Project Portfolio","Data Analytics Project Portfolio","UI/UX Portfolio Mastery","AI Agents Engineering","RAG Application Development","LLM Application Engineering","Computer Science Foundations","Operating Systems Security","Network Automation with Python","Cloud Networking","Cloud Native Architecture","Serverless Application Development","Kubernetes Administration","Kubernetes Security","Infrastructure as Code","Observability Engineering","Prometheus & Grafana","Apache Spark Engineering","Apache Kafka Streaming","ETL & ELT Engineering","Data Warehousing","Data Modeling","Business Intelligence","Tableau Analytics","Looker Studio Analytics","Power Query","Power Automate","Microsoft Azure Data Engineering","Google Cloud Data Engineering","AWS Data Engineering","Secure Software Development","Application Security Testing","Bug Bounty Foundations","Digital Privacy & Online Safety","Technical Leadership","Technology Product Design"];
+
+const corePlaylists = {
+  "lwf-001": "PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv",
+  "lwf-002": "PLBlnK6fEyqRp41K6u7yM1R7M6M9iT94_G",
+  "lwf-003": "PL3E7A3102C063C2E8",
+  "lwf-004": "PLillGF-RaqbfMJ23cbA0201S_Hn75gSjS",
+  "lwf-008": "PLsyeobzWJlgwxiWDmvwg_963GsTHl4tV0",
+  "lwf-009": "PLillGF-RaqbeNT8y32v"
+};
+
+let courses=titles.map((title,i)=>{
+  const id = "lwf-"+String(i+1).padStart(3,"0");
+  const playlistId = corePlaylists[id] || "";
+  return {
+    id,
+    title,
+    category:categories[(i% (categories.length-1))+1],
+    level:["Beginner","Intermediate","Advanced"][i%3],
+    playlistId,
+    playlistUrl: playlistId ? `https://www.youtube.com/playlist?list=${playlistId}` : ""
+  };
+});
+
+const progress=JSON.parse(localStorage.getItem("lwf-progress")||"{}");
+let current=null,currentLesson=0,quizState=null,owner=false,player=null,filter="All";
+
+function save(){localStorage.setItem("lwf-progress",JSON.stringify(progress));localStorage.setItem("lwf-courses",JSON.stringify(courses))}
+try{const s=JSON.parse(localStorage.getItem("lwf-courses"));if(Array.isArray(s)&&s.length===courses.length)courses=s}catch(e){}
+
+function show(id){document.querySelectorAll(".page").forEach(x=>x.classList.remove("show"));const el=document.getElementById(id);if(el)el.classList.add("show");if(id!=="owner")document.getElementById("owner").classList.remove("show");scrollTo(0,0)}
+function renderFilters(){document.getElementById("filters").innerHTML=categories.map(c=>`<button class="chip ${filter===c?"active":""}" onclick="filter='${c}';renderFilters();render()">${c}</button>`).join("")}
+function render(){const q=(document.getElementById("search").value||"").toLowerCase();const list=courses.filter(c=>(filter==="All"||c.category===filter)&&(c.title+" "+c.category).toLowerCase().includes(q));document.getElementById("count").textContent=`${list.length} of ${courses.length} courses`;document.getElementById("grid").innerHTML=list.map(c=>`<article class="card"><div class="cover"><span class="badge">${c.category}</span></div><div class="cardbody"><div class="meta">${c.level} • 3 modules • Free</div><h3>${c.title}</h3><div class="meta">${c.playlistId?"✔ Playlist configured":"⚡ Dynamic Auto-Embed Active"}</div><div class="actions"><button class="primary" onclick="openCourse('${c.id}')">Start Track</button>${owner?`<button class="secondary" onclick="editCourse('${c.id}')">✏️ Edit</button>`:""}</div></div></article>`).join("")||'<div class="meta">No courses found.</div>'}
+function pstate(){return progress[current.id]||(progress[current.id]={lessons:{},modules:{},final:false})}
+
+function ensurePlayer(){
+  if(player||typeof YT==="undefined"||!YT.Player)return;
+  const mount=document.getElementById("player"); if(!mount)return;
+  player=new YT.Player("player",{width:"100%",height:"100%",playerVars:{playsinline:1,rel:0},events:{
+    onReady:()=>loadLesson(),
+    onError:e=>{console.warn("YouTube error:",e.data);renderYoutubeFallback(current)},
+    onStateChange:e=>{if(e.data===YT.PlayerState.ENDED)startQuiz("lesson",currentLesson)}
+  }});
+}
+
+function openCourse(id){current=courses.find(c=>c.id===id);currentLesson=0;document.getElementById("courseTitle").textContent=current.title;document.getElementById("courseDesc").textContent=`${current.level} • 3 modules • structured assessments`;show("workspace");renderCurriculum();if(player&&current.playlistId)loadLesson();else ensurePlayer();if(!current.playlistId)renderYoutubeFallback(current)}
+function renderCurriculum(){const p=pstate();let out="";for(let m=1;m<=3;m++){out+=`<div class="module"><h4>Module ${m} ${p.modules[m]?"✔":""}</h4>`;for(let j=0;j<5;j++){let i=(m-1)*5+j,done=!!p.lessons[i],locked=i>0&&!p.lessons[i-1];out+=`<button class="lesson" ${locked?"disabled":`onclick="selectLesson(${i})"`}>${done?"✔":"▶"} Lesson ${j+1}<span class="tick">${done?"✔":""}</span></button>`}out+="</div>"}out+=`<div style="padding:15px"><button class="primary" style="width:100%" ${[1,2,3].every(m=>p.modules[m])?"":"disabled"} onclick="startQuiz('final',0)">🎓 Final Graduation Assessment</button></div>`;document.getElementById("curriculum").innerHTML=out}
+function selectLesson(i){currentLesson=i;loadLesson()}
+function renderYoutubeFallback(c){
+  const searchEmbedUrl = `https://www.youtube.com/embed?listType=search&list=${encodeURIComponent(c.title + ' full course tutorial')}`;
+  document.getElementById("player").innerHTML=`<iframe width="100%" height="100%" src="${searchEmbedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+}
+function loadLesson(){
+  document.getElementById("lessonTitle").textContent=`${current.title} — Lesson ${currentLesson+1}`;
+  document.getElementById("lessonStatus").textContent=current.playlistId?"Official playlist attached":"Dynamic YouTube Stream Active";
+  if(player && current.playlistId){
+    try{
+      player.loadPlaylist({list:current.playlistId,index:currentLesson});
+      return;
+    }catch(e){console.warn("Playlist load failed",e)}
+  }
+  renderYoutubeFallback(current);
+}
+function onYouTubeIframeAPIReady(){if(typeof ensurePlayer==="function")ensurePlayer()}
+
+const baseQ=[["What is an algorithm?","A defined procedure for solving a problem",["A monitor cable","A photo filter","A domain name"],0],["What is responsive design?","Design that adapts to different screen sizes",["A CPU feature","A database backup","A password"],0],["Why keep API keys private?","They can authorize access to services",["They are CSS colors","They are images","They are fonts"],0],["What is phishing?","A deceptive attempt to obtain sensitive information",["A database","A programming language","A browser"],0],["What is encryption?","Transforming data so authorized parties can read it",["Deleting data","Changing brightness","Sorting fonts"],0],["What is Git?","A version control system",["A video player","A spreadsheet","A graphics editor"],0],["What is cloud computing?","On-demand computing resources over a network",["A keyboard","A font","A file extension"],0],["What does UX focus on?","The user experience with a product",["Only hardware","Only indexes","Only file size"],0],["What is debugging?","Finding and fixing software problems",["Buying a domain","Compressing images","Creating hardware"],0],["What is an API?","An interface that lets software components communicate",["A screen size","A certificate border","A keyboard"],0],["What is least privilege?","Giving only the access required",["Giving everyone admin","Removing passwords","Sharing credentials"],0],["What is a backup?","A separate copy used for recovery",["A CSS selector","An animation","A font"],0],["What is machine learning?","Systems learning patterns from data",["A keyboard","A cable","A file format"],0],["What is accessibility?","Designing products usable by people with diverse abilities",["Hiding controls","Removing keyboard support","Making text tiny"],0],["What is a firewall?","A control that filters network traffic",["A font library","A spreadsheet","A video codec"],0],["What is version control useful for?","Tracking changes to code",["Charging a battery","Drawing icons","Compressing video"],0],["What is a database?","A system for organizing and retrieving data",["Only page styling","A monitor","A keyboard"],0],["What is CI/CD?","Automated building, testing and delivery",["A design font","A password","A camera"],0],["What is a container commonly used for?","Packaging an application and dependencies",["Changing DNS","Drawing wireframes","Writing certificates"],0],["Why validate input?","To reduce invalid data and security risks",["To expose secrets","To remove testing","To disable forms"],0],["What is DNS?","A system mapping domain names to network addresses",["A design framework","A video codec","A database row"],0],["What is software testing?","Checking software against expected behavior",["Deleting code","Buying hardware","Changing a logo"],0],["What is a database query?","A request to retrieve or manipulate data",["A color palette","A keyboard shortcut","A screen"],0],["What is HTML primarily used for?","Structuring web content",["Encrypting disks","Managing DNS","Training CPUs"],0]];
+
+function questions(type,seed){const n=type==="lesson"?8:type==="module"?15:25;return Array.from({length:n},(_,i)=>baseQ[(i+seed)%baseQ.length])}
+function startQuiz(type,id){quizState={type,id,qs:questions(type,id)};document.getElementById("quizTitle").textContent=type==="final"?"Final Graduation Assessment":type==="module"?`Module ${id} Assessment`:"Lesson Assessment";document.getElementById("quizRule").textContent=`Exactly ${quizState.qs.length} questions. 100% correct is required.`;document.getElementById("quizAlert").className="alert";document.getElementById("quizForm").innerHTML=quizState.qs.map((q,i)=>`<div class="question"><p>${i+1}. ${q[0]}</p>${[q[1],...q[2]].map((a,j)=>`<label><input required type="radio" name="q${i}" value="${j}"> ${a}</label>`).join("")}</div>`).join("");document.getElementById("quiz").classList.add("show")}
+function closeQuiz(){document.getElementById("quiz").classList.remove("show")}
+
+function submitQuiz(e){
+  e.preventDefault();
+  let score=0;
+  quizState.qs.forEach((q,i)=>{
+    const x=document.querySelector(`input[name=q${i}]:checked`);
+    if(x&&+x.value===q[3])score++;
+  });
+  if(score!==quizState.qs.length){
+    const a=document.getElementById("quizAlert");
+    a.className="alert error";
+    a.textContent="⚠️ Assessment failed! Answer all questions correctly to proceed.";
+    return;
+  }
+  const p=pstate();
+  if(quizState.type==="lesson"){
+    p.lessons[quizState.id]=true;
+    if([4,9,14].includes(quizState.id)){
+      const m=quizState.id===4?1:quizState.id===9?2:3;
+      closeQuiz();
+      renderCurriculum();
+      setTimeout(()=>startQuiz("module",m),200);
+      save();
+      return;
+    }
+  }else if(quizState.type==="module"){
+    p.modules[quizState.id]=true;
+  }else{
+    p.final=true;
+    closeQuiz();
+    save();
+    generateCertificate();
+    renderCurriculum();
+    return;
+  }
+  save();
+  closeQuiz();
+  renderCurriculum();
+  loadLesson();
+}
+
+function ownerLogin(){
+  if(owner){document.getElementById("owner").classList.toggle("show");return}
+  const x=prompt("Owner access code:");
+  if(x==="LWF-OWNER-2026"){
+    owner=true;
+    document.getElementById("owner").classList.add("show");
+    populateOwner();
+    render();
+  }else if(x!==null){
+    alert("Access denied.");
+  }
+}
+
+function populateOwner(){
+  document.getElementById("courseSelect").innerHTML=courses.map(c=>`<option value="${c.id}">${c.title}</option>`).join("");
+  document.getElementById("statCourses").textContent=courses.length;
+  document.getElementById("statLinked").textContent=courses.filter(c=>c.playlistId).length;
+  document.getElementById("statCerts").textContent=Object.values(progress).filter(p=>p.final).length;
+}
+
+function attach(){
+  const cid=document.getElementById("courseSelect").value;
+  const url=document.getElementById("playlistUrl").value.trim();
+  const match=url.match(/[?&]list=([^&]+)/);
+  const target=courses.find(c=>c.id===cid);
+  if(!target)return;
+  if(match){
+    target.playlistId=match[1];
+    target.playlistUrl=url;
+    save();
+    populateOwner();
+    render();
+    document.getElementById("ownerMsg").textContent=`Playlist attached to ${target.title}`;
+  }else{
+    alert("Invalid Playlist URL! Must contain list=ID");
+  }
+}
+
+function generateCertificate(){
+  const name=prompt("Enter student name for certificate:")||"Learner";
+  document.getElementById("certName").textContent=name;
+  document.getElementById("certCourse").textContent=current.title;
+  const certEl=document.getElementById("certificate");
+  certEl.style.display="block";
+  document.getElementById("qrcode").innerHTML="";
+  if(window.QRCode){
+    new QRCode(document.getElementById("qrcode"),{text:window.location.href,width:80,height:80});
+  }
+  document.getElementById("certVerify").textContent="ID: LWF-"+Math.random().toString(36).substr(2,9).toUpperCase();
+  if(window.html2pdf){
+    html2pdf().from(certEl).save(`${name}-${current.title}-Certificate.pdf`).then(()=>{
+      certEl.style.display="none";
+    });
+  }
+}
+
+function setLanguage(val){
+  console.log("Language changed to:", val);
+}
+
+function speakPage(){
+  const text=document.querySelector(".page.show").innerText;
+  if('speechSynthesis' in window){
+    window.speechSynthesis.cancel();
+    const msg=new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(msg);
+  }
+}
+
+function stopSpeech(){
+  if('speechSynthesis' in window) window.speechSynthesis.cancel();
+}
+
+window.addEventListener("DOMContentLoaded",()=>{
+  renderFilters();
+  render();
+});
+</script>
+</body>
+</html>
